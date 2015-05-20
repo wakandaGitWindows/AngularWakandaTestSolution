@@ -1,0 +1,81 @@
+<h1>Entity Collection :</h1>
+
+<div class="row">
+	<div class="col-sm-3">
+
+		<div class="btn-group-vertical" role="group" aria-label="Methods">
+			
+
+			<button class="methods btn btn-danger titleRow"  >Methods</button>		
+	
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button      class="methods btn btn-default ng-binding ng-scope" id="query" ng-click="query()">$query</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button      class="methods btn btn-default ng-binding ng-scope" id="totalCount" ng-click="totalCount()">$totalCount()</button>
+
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button      class="methods btn btn-default ng-binding ng-scope" id="totalCount_filter" ng-click="totalCount({ 'filter': 'ID <4'})">$totalCount_filter()</button>
+			
+				<!-- end ngRepeat: method in methods track by $index -->
+
+		
+			<button    class="methods btn btn-default ng-binding ng-scope" id="fetch_start" ng-click="fetch({start: 2})">$fetch_start()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+
+			<button    class="methods btn btn-default ng-binding ng-scope" id="fetch_pageSize" ng-click="fetch({pageSize: 3})">$fetch_pageSize()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			
+			<button    class="methods btn btn-default ng-binding ng-scope" id="fetch_pageSize_start" ng-click="fetch({pageSize: 3 , start: 3})">$fetch_pageSize_start()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+
+		
+			
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find" ng-click="find()">$find()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_selectOption" ng-click="find({'select':'company'})">$find_selectOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_filterOption" ng-click="find({'select':'company','filter':'ID < 3'})">$find_filterOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_paramsOption" ng-click="find({'select':'company','filter':'name == :1 &amp;&amp; ID < :2','params':['ELMETNI',3]})">$find_paramsOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_pageSizeOption" ng-click="find({'select':'company','pageSize':2})">$find_pageSizeOption()</button>
+			
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_orderByOption" ng-click="find({'select':'company','orderBy':'ID desc'})">$find_orderByOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_filter_orderBy" ng-click="find({'select':'company','filter':'ID < 3','orderBy':'ID desc'})">$find_filter_orderBy()</button>
+			
+
+
+
+
+
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button      class="methods btn btn-default ng-binding ng-scope" id="isLoaded" ng-click="isLoaded()">$isLoaded()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button      class="methods btn btn-default ng-binding ng-scope" id="more" ng-click="more()">$more()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button    class="methods btn btn-default ng-binding ng-scope" id="nextPage" ng-click="nextPage()">$nextPage()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button    class="methods btn btn-default ng-binding ng-scope" id="prevPage" ng-click="prevPage()">$prevPage()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+
+
+
+		</div>
+	</div>
+	<div class="col-sm-9">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Test Resuslts :</div>
+		  		<div class="panel-body">
+		    		<p class="result" >{{result}}</p>
+		    		<hr/>
+		    		<p class="comment">{{comment}} </p>
+		  		</div>
+		</div>
+		
+	</div>
+		
+</div>

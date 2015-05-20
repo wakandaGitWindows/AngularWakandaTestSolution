@@ -1,0 +1,88 @@
+<h1>Data Class :</h1>
+
+
+<div class="row">
+
+	<div class="col-sm-3">
+
+		<div class="btn-group-vertical" role="group" aria-label="Methods">
+			
+			<button class="methods btn btn-danger titleRow"  >Methods</button>		
+			
+
+			<!-- ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="collectionName" ng-click="collectionName()">$collectionName </button>
+
+
+			<!-- ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="name" ng-click="name()">$name</button>
+
+			<!-- ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="attr" ng-click="attr()">$attr()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="collectionMethods" ng-click="collectionMethods()">$collectionMethods()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="dataClassMethods" ng-click="dataClassMethods()">$dataClassMethods()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="entityMethods" ng-click="entityMethods()">$entityMethods()</button>
+			
+
+			
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find" ng-click="find()">$find()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_selectOption" ng-click="find({'select':'company'})">$find_selectOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_filterOption" ng-click="find({'select':'company','filter':'ID < 4'})">$find_filterOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_paramsOption" ng-click="find({'select':'company','filter':'name == :1 &amp;&amp; ID < :2','params':['ELMETNI',4]})">$find_paramsOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_pageSizeOption" ng-click="find({'select':'company','pageSize':3})">$find_pageSizeOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_orderByOption" ng-click="find({'select':'company','orderBy':'ID desc'})">$find_orderByOption()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="find_filter_orderBy" ng-click="find({'select':'company','filter':'ID < 4','orderBy':'ID desc'})">$find_filter_orderBy()</button>
+			
+
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="findOne" ng-click="findOne()">$findOne()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="findOneSelect" ng-click="findOne_select()">$findOne_Select()</button>
+			
+
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="create" ng-click="create()">$create()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="create_emptyEntity" ng-click="create({'empty':true})">$create_emptyEntity()</button>
+			<!-- end ngRepeat: method in methods track by $index -->
+			<button     class="methods btn btn-default ng-binding ng-scope" id="create_withEntity" ng-click="create({'name':'entityOption','age':26})">$create_withEntity()</button>
+			
+
+
+
+
+</div>
+	</div>
+	<div class="col-sm-9">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Test Resuslts :</div>
+		  	<div class="panel-body">
+		    	<p class="result" >{{result}}</p>
+		    	<hr/>
+		    	<p class="comment">{{comment}} </p>
+		  	</div>
+		</div>
+		
+	</div>
+		
+</div>
+
+
+
+
+
+
+
+			
+

@@ -1,0 +1,52 @@
+
+
+
+<h1> Authentication    </h1>
+
+<div class="row">
+	<div class="col-sm-3">
+
+		<div class="btn-group-vertical" role="group" aria-label="Methods">
+		<button class="methods btn btn-danger titleRow"  >Methods</button>		
+		<button  class="methods btn btn-default" id="DirectoryLogin" ng-click="login({'login':'Admin' , 'password':'123456'})" > Directory: $login() </button>
+<button  class="methods btn btn-default" id="DirectoryLoginByPassword" ng-click="loginByPassword({'login':'Admin' , 'password':'123456'})" > Directory: $loginByPassword() </button>
+<button  class="methods btn btn-default" id="DirectoryCurrentUser" ng-click="currentUser()" > Directory: $CurrentUser() </button>
+<button  class="methods btn btn-default" id="DirectoryCurrentUserBelongsTo1" ng-click="currentUserBelongsTo({'Group':'Admin'})" > Directory: $currentUserBelongsTo( )  test1  </button>
+<button  class="methods btn btn-default" id="DirectoryCurrentUserBelongsTo2" ng-click="currentUserBelongsTo({'Group':'TestGroupLevel1'})" > Directory: $currentUserBelongsTo( )  test1  </button>
+<button  class="methods btn btn-default" id="DirectoryCurrentUserBelongsTo3" ng-click="currentUserBelongsTo({'Group':'TestGroupLevel2'})" >Directory: $currentUserBelongsTo( )   test3 </button>
+<button  class="methods btn btn-default" id="DirectoryCurrentUserBelongsTo4" ng-click="currentUserBelongsTo({'Group':'DirectoryGroup'})" >Directory: $currentUserBelongsTo( )   test4 </button>
+
+<button  class="methods btn btn-default" id="DirectoryLogout" ng-click="logout()" > Directory: $logout( ) </button>
+
+<button  class="methods btn btn-default" id="DataLogin" ng-click="login({'login':'elmetni','password':'123456'})" > Data : $login() </button>
+<button  class="methods btn btn-default" id="DataLoginByPassword" ng-click="loginByPassword({'login':'elmetni' , 'password':'123456'})" > Data : $loginByPassword() </button>
+<button  class="methods btn btn-default" id="DataCurrentUser" ng-click="currentUser()" > Data : $CurrentUser()  </button>
+<button  class="methods btn btn-default" id="DataCurrentUserBelongsTo1" ng-click="currentUserBelongsTo({'Group':'Admin'})" > Data: $currentUserBelongsTo( )  test1  </button>
+<button  class="methods btn btn-default" id="DataCurrentUserBelongsTo2" ng-click="currentUserBelongsTo({'Group':'TestGroupLevel1'})" > Data: $currentUserBelongsTo( )  test2 </button>
+<button  class="methods btn btn-default" id="DataCurrentUserBelongsTo3" ng-click="currentUserBelongsTo({'Group':'TestGroupLevel2'})" > Data: $currentUserBelongsTo( )  test3 </button>
+<button  class="methods btn btn-default" id="DataCurrentUserBelongsTo4" ng-click="currentUserBelongsTo({'Group':'DirectoryGroup'})" > Data: $currentUserBelongsTo( )  test4 </button>
+
+<button  class="methods btn btn-default" id="DataLogout" ng-click="logout()" > Data : $logout( ) </button>
+
+	
+		</div>
+	</div>
+	<div class="col-sm-9">
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Test Resuslts :</div>
+		  	<div class="panel-body">
+		    	<p id="result" >{{result}}</p>
+		    	
+		  	</div>
+		</div>
+		
+	</div>
+		
+</div>
+
+
+
+
+
+

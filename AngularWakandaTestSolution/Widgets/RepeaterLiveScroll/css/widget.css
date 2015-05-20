@@ -1,0 +1,17 @@
+﻿
+.waf-widget.waf-repeaterlivescroll {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border: solid 1px black;
+}
+
+.waf-widget.waf-repeaterlivescroll>div {
+	position: relative;
+	
+}
+
+.waf-widget.waf-repeaterlivescroll .waf-text{
+	position: absolute;
+	height: 20px;
+	width: 100%;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><directory>
+	<group ID="01000000000000000000000000000000" name="Admin">	</group>
+	<group ID="A6695BA2FD03AF4A89517D7BC9A6FAAA" name="TestGroupLevel1"/>
+	<group ID="B65343C59929874EB20341E512CD246B" name="TestGroupLevel2"/>
+	<group ID="CDEE7424A9A7EF4E81532F3749D1360F" name="TestGroupLevel3"/>
+	<group ID="83A87BA00B7DED458A259C1919822A3E" name="DirectoryGroup">
+		<include user="admin" userID="E74FFA3958FA5C41AFB2DDF964002B8F"/>
+	</group>
+	<user ID="E74FFA3958FA5C41AFB2DDF964002B8F" name="admin" fullName="admin" password="848d5cf7187fce9c3f5c7807391ca6ec"/>
+</directory>
